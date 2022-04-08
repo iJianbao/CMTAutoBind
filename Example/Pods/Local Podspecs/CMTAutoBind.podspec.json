@@ -1,19 +1,19 @@
 {
   "name": "CMTAutoBind",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "summary": "A short description of CMTAutoBind.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/506227061@qq.com/CMTAutoBind",
+  "homepage": "https://github.com/iJianbao",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "506227061@qq.com": "wangfx@igancao.com"
+    "506227061@qq.com": "jianbao_hundun@163.com"
   },
   "source": {
-    "git": "https://github.com/506227061@qq.com/CMTAutoBind.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/iJianbao/CMTAutoBind.git",
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "9.0"

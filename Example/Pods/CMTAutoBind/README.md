@@ -105,8 +105,6 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'CMTAutoBind'
-or
-pod 'CMTAutoBind', :git => "https://github.com/iJianbao/CMTAutoBind.git"
 ```
 
 ## Author
