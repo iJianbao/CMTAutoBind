@@ -60,7 +60,16 @@ open class CMTTextView: UITextView, CMTBindTextViewBindUpdateProtocol {
     }
     
     func updateTypingAttributes(_ typingAttributes: [NSAttributedString.Key : Any]?) {
-        self.typingAttributes = typingAttributes ?? self.typingAttributes
+        // self.typingAttributes = typingAttributes ?? self.typingAttributes
+        if let array = typingAttributes {
+            var newArray: [String : Any] = [:]
+            for d in array {
+                newArray[d.key.rawValue] = d.value
+            }
+            self.typingAttributes = newArray
+        }else {
+            self.typingAttributes = self.typingAttributes
+        }
     }
     
     func updateInputView(_ inputView: UIView?) {
@@ -83,7 +92,16 @@ open class CMTTextView: UITextView, CMTBindTextViewBindUpdateProtocol {
     }
     
     func updateLinkTextAttributes(_ linkTextAttributes: [NSAttributedString.Key : Any]?) {
-        self.linkTextAttributes = linkTextAttributes ?? self.linkTextAttributes
+//        self.linkTextAttributes = linkTextAttributes ?? self.linkTextAttributes
+        if let array = linkTextAttributes {
+            var newArray: [String : Any] = [:]
+            for d in array {
+                newArray[d.key.rawValue] = d.value
+            }
+            self.linkTextAttributes = newArray
+        }else {
+            self.linkTextAttributes = self.linkTextAttributes
+        }
     }
 
     @available(iOS 13.0, *)

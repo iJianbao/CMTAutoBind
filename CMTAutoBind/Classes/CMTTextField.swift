@@ -42,7 +42,16 @@ open class CMTTextField: UITextField, CMTBindTextFieldBindUpdateProtocol {
     }
     
     func updateDefaultTextAttributes(_ defaultTextAttributes: [NSAttributedString.Key : Any]?) {
-        self.defaultTextAttributes = defaultTextAttributes ??  self.defaultTextAttributes
+//        self.defaultTextAttributes = defaultTextAttributes ??  self.defaultTextAttributes
+        if let array = defaultTextAttributes {
+            var newArray: [String : Any] = [:]
+            for d in array {
+                newArray[d.key.rawValue] = d.value
+            }
+            self.defaultTextAttributes = newArray
+        }else {
+            self.defaultTextAttributes = self.defaultTextAttributes
+        }
     }
     
     func updatePlaceholder(_ placeholder: String?) {
@@ -82,7 +91,16 @@ open class CMTTextField: UITextField, CMTBindTextFieldBindUpdateProtocol {
     }
     
     func updateTypingAttributes(_ typingAttributes: [NSAttributedString.Key : Any]?) {
-        self.typingAttributes = typingAttributes ?? self.typingAttributes
+//        self.typingAttributes = typingAttributes ?? self.typingAttributes
+        if let array = typingAttributes {
+            var newArray: [String : Any] = [:]
+            for d in array {
+                newArray[d.key.rawValue] = d.value
+            }
+            self.typingAttributes = newArray
+        }else {
+            self.typingAttributes = self.typingAttributes
+        }
     }
     
     func updateClearButtonMode(_ clearButtonMode: UITextField.ViewMode?) {
