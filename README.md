@@ -1,14 +1,17 @@
 # CMTAutoBind
 简单的实现数据与视图的绑定。当数据改变后，会主动更新与数据绑定的视图。
-
+```
 step1: 创建数据 
         let observer = CMTObserver<String>.init("-1")
+        
 step2: 创建视图 
         let label = CMTLabel.init(frame: CGRect.init(x: 100, y: 100, width: 100, height: 100))
         label.bind.text = observer
+        
+        
 step3: 在任何地方修改数据，label的text属性值会自动修改
         observer.value = "333"
-        
+``` 
 
 [![CI Status](https://img.shields.io/travis/506227061@qq.com/CMTAutoBind.svg?style=flat)](https://travis-ci.org/506227061@qq.com/CMTAutoBind)
 [![Version](https://img.shields.io/cocoapods/v/CMTAutoBind.svg?style=flat)](https://cocoapods.org/pods/CMTAutoBind)
@@ -18,6 +21,7 @@ step3: 在任何地方修改数据，label的text属性值会自动修改
 ## Example
 
 // 使用方式
+```
 class ViewController: UIViewController {
     
     var observer: CMTObserver<String>? = CMTObserver<String>.init(nil)
@@ -35,9 +39,9 @@ class ViewController: UIViewController {
         label.bind.backgroundColor = observerBackGroundColor
         self.view.addSubview(label)
         
-        let button = UIButton.init(type: .system)
+        let button = CMTButton.init(type: .system)
         button.frame = CGRect.init(x: 100, y: 200, width: 100, height: 100)
-        button.setTitle("点我", for: .normal)
+        button.bind.normalTitle = observer2
         button.addTarget(self, action: #selector(btnAction(_:)), for: .touchUpInside)
         self.view.addSubview(button)
         
@@ -90,7 +94,7 @@ class ViewController: UIViewController {
         }
     }
 }
-
+```
 
 ## Requirements
 

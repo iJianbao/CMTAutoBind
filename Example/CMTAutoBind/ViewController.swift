@@ -25,9 +25,9 @@ class ViewController: UIViewController {
         label.bind.backgroundColor = observerBackGroundColor
         self.view.addSubview(label)
         
-        let button = UIButton.init(type: .system)
+        let button = CMTButton.init(type: .system)
         button.frame = CGRect.init(x: 100, y: 200, width: 100, height: 100)
-        button.setTitle("点我", for: .normal)
+        button.bind.normalTitle = observer2
         button.addTarget(self, action: #selector(btnAction(_:)), for: .touchUpInside)
         self.view.addSubview(button)
         
