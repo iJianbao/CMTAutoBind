@@ -1,0 +1,6 @@
+framework module CMTAutoBind {
+  umbrella header "CMTAutoBind-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - CMTAutoBind (0.1.0)
+
+DEPENDENCIES:
+  - CMTAutoBind (from `../`)
+
+EXTERNAL SOURCES:
+  CMTAutoBind:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CMTAutoBind: 38153a6829ea86079e0af667d44f565be3e6e3fd
+
+PODFILE CHECKSUM: 30c542530091daae8ab7b98a6d6e8b8ad3b2d017
+
+COCOAPODS: 1.10.1

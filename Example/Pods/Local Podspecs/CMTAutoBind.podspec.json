@@ -1,0 +1,23 @@
+{
+  "name": "CMTAutoBind",
+  "version": "0.1.0",
+  "summary": "A short description of CMTAutoBind.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/506227061@qq.com/CMTAutoBind",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "506227061@qq.com": "wangfx@igancao.com"
+  },
+  "source": {
+    "git": "https://github.com/506227061@qq.com/CMTAutoBind.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "CMTAutoBind/Classes/**/*",
+  "frameworks": "UIKit"
+}

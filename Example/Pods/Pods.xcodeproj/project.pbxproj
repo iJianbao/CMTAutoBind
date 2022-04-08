@@ -1,0 +1,902 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0581070B6CB66B1E3097630DCBE4A659 /* CMTBindSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDC0CC2BD66E767299EA77AD5DCA099 /* CMTBindSlider.swift */; };
+		0D05698A75DEF9AC2F08B2F532552774 /* CMTBindStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DDA6FBFC14DF829CEE5AB4920D2A0B /* CMTBindStepper.swift */; };
+		108E8E62C5A4BB0C458B6EA2364640D7 /* CMTBindLable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463B8DF8215DF98ADBDCD2818920BEEF /* CMTBindLable.swift */; };
+		1800B9EE960D824A28A058B38B106C5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		1979432431D71846817A6137E3167623 /* CMTBindTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7786453CBA5968DA62CD64CC621FD8 /* CMTBindTextField.swift */; };
+		1B1199F819853C821D0D63D92AF72A22 /* CMTBindProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBDB037E9688629E228BEF917369FCB /* CMTBindProgressView.swift */; };
+		1DB5126AC882354B26C66C81BA3B3271 /* CMTBindButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100CC8049EDE784CD5DE415A35D97C7D /* CMTBindButton.swift */; };
+		2165DEF52418957420E776774DAA1AD8 /* CMTBindControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFBE201381FB2F2039F12FDF49DAA4E /* CMTBindControl.swift */; };
+		2246E2584B13273A92489E9C5811DF70 /* CMTStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8CDB86E596ADD13B47CFFD065DBC6C /* CMTStepper.swift */; };
+		23C0BCB2D4938CFE3A1C752404984DF3 /* CMTAutoBind-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 946300812B9E3C4F1E2EFB0D1C685997 /* CMTAutoBind-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2764F3C844946590CC7CABC5D1559DD1 /* CMTBind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3D1534090B8BF780C630D511B1C18F /* CMTBind.swift */; };
+		4131B52D8D3A7AD6114196CDA3AF7AE9 /* CMTSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F209C2AD2C8DF650BA23BC5CE49CEF /* CMTSegmentedControl.swift */; };
+		46CB690A9A8A6CCED518AD2AC764E191 /* CMTBindScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921EA30FFC2DD2F57007B4BC667AC76B /* CMTBindScrollView.swift */; };
+		5313514D5625A7D02DB8057D4CAA24F1 /* CMTSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA29FE7E32FD1D31EFD390F3FBB750 /* CMTSwitch.swift */; };
+		552E1C686843C5D46DD328B3CE6877BD /* CMTLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D453C3E51EF5E6948EE815C3459FD0 /* CMTLabel.swift */; };
+		56BAEEBCA71994A27EA6A6D903914725 /* Pods-CMTAutoBind_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D413B849D37A75DF1FB620C4060C380 /* Pods-CMTAutoBind_Example-dummy.m */; };
+		5BB45470777B36910322C91227A99DEC /* CMTTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75549E7398661F678360441A757EBCEA /* CMTTextView.swift */; };
+		607F8D72783C9BA965B83FAB97DF97DA /* CMTBindTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5B3B12FA9809E3ACD20B2CC5B39913 /* CMTBindTextView.swift */; };
+		678913231BCD3D660B4E834DC99374FE /* CMTAutoBind-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1202F9EDD3F547F7C5C8CFD249B23B3C /* CMTAutoBind-dummy.m */; };
+		687468B9B002C5652197562E192E1664 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		8216EEE2871B019EC6B7D61BC1CB45E6 /* CMTBindTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F9B11A16F1EA172911B466F6778AE9 /* CMTBindTableViewCell.swift */; };
+		8803866574C0A8BC9D4274A2FE7762F7 /* CMTPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CD46CEF6FBAC4FBDD2A3AAE51A0C5A /* CMTPageControl.swift */; };
+		8F0BA8E32E4478527F10ABB79BCF4500 /* CMTControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B4022EDAAA54D38677F37E2F1CF52E /* CMTControl.swift */; };
+		8FBF9F79C1CD2026CCCDB576DF22D85A /* CMTBindPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E08B0EF71045C73B8741ECE04D00A9 /* CMTBindPageControl.swift */; };
+		9251E9D7C8EF8EBADEF3C0961EA478E0 /* CMTImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54694A26CF2C429A40D5A77F2E9A55F6 /* CMTImageView.swift */; };
+		93973FB3A05883331BB161642E2A34C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		9641F669310376472552FA832C709FCB /* CMTBindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0699366D4A6E6BC9A7193A8757DF9A00 /* CMTBindView.swift */; };
+		B097E58A59E804A7228795E0135992A3 /* CMTScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA0F8F40045F39766C4E7A1989F3A3 /* CMTScrollView.swift */; };
+		B14ACB0861A3E4BF20A8467EF643B113 /* CMTSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9663F125DD01DF36DB118722EA9D8 /* CMTSlider.swift */; };
+		B71AD0AE11003D67D2D6886731B357DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		B970DCF39332BBE7E5A9F4C97D7F3897 /* CMTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03837145308FDA681FC5B730CABB76FF /* CMTView.swift */; };
+		BAA81C2D5858665822FEE624EBABEAC2 /* CMTProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C4998BE868F1A7CC98638B8F8B55E4 /* CMTProgressView.swift */; };
+		BE3E5BFC11290B627B76F46B915B74C7 /* CMTTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A34A26C77192AFB6FF8A55A1AF257 /* CMTTableView.swift */; };
+		C19ED8437D3CFEBE6D05664E0A3965E5 /* CMTTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C4F39C481FFB690DAB9C310F90ABB1 /* CMTTextField.swift */; };
+		C49B33FF812CDA4B9EC16421C79C9E74 /* Pods-CMTAutoBind_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE0F6889C49A46BFFCF547E41B19FE2 /* Pods-CMTAutoBind_Tests-dummy.m */; };
+		C67F6510FB9FFC180E6C4C7CFDB5CF21 /* CMTBindTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F619D4A705B173E3CE61E3A4CB4E119B /* CMTBindTableView.swift */; };
+		CB787D717960E5568F6A466D30DC2C48 /* CMTTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BDBF9D300E15EA503B60C6ACBDBCE0 /* CMTTableViewCell.swift */; };
+		D05FA6BACF8A95EEF3AE69F99B278890 /* Pods-CMTAutoBind_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 948B5BDD921F965D93752439A3F13962 /* Pods-CMTAutoBind_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCECB5F9351B3A6B8EC6C34A47A2E43C /* CMTBindSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4FB7E0CF39FCC72CBD834D741B8F96 /* CMTBindSegmentedControl.swift */; };
+		DD58B86DCE15C205E5CC5E66199E9CD2 /* Pods-CMTAutoBind_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5F97BC842558949CF211F8ABBB501C3 /* Pods-CMTAutoBind_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8A9F22BBAFB8F5577F6294EA8093724 /* CMTBindSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA00DF1F71FFE010D41F00344B324D9 /* CMTBindSwitch.swift */; };
+		F2EEE23A3A1180CFA902CF7E40062C44 /* CMTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9364C45C18E4A8B6514F214A0555BB7B /* CMTButton.swift */; };
+		F8E42B2257A22561A807DA624E67B925 /* CMTBindImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555E820DBB4768CCC59520952397989D /* CMTBindImageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15BD82DCF2B2422F6F252371B1210B45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0B796AFE83AFB59031335F481D62958;
+			remoteInfo = CMTAutoBind;
+		};
+		ABDD038931F16426E353F323C06B7B6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 877192997EB337658AAAABB517D21FD5;
+			remoteInfo = "Pods-CMTAutoBind_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03837145308FDA681FC5B730CABB76FF /* CMTView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTView.swift; path = CMTAutoBind/Classes/CMTView.swift; sourceTree = "<group>"; };
+		0699366D4A6E6BC9A7193A8757DF9A00 /* CMTBindView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTBindView.swift; path = CMTAutoBind/Classes/CMTBindView.swift; sourceTree = "<group>"; };
+		0AF24D4905375CE3E7964DA973A446DA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		0B5CF9DF07E10CC551469632EA0DC4EB /* Pods-CMTAutoBind_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CMTAutoBind_Tests-Info.plist"; sourceTree = "<group>"; };
+		0EFBE201381FB2F2039F12FDF49DAA4E /* CMTBindControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTBindControl.swift; path = CMTAutoBind/Classes/CMTBindControl.swift; sourceTree = "<group>"; };
+		100CC8049EDE784CD5DE415A35D97C7D /* CMTBindButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTBindButton.swift; path = CMTAutoBind/Classes/CMTBindButton.swift; sourceTree = "<group>"; };
+		11E9663F125DD01DF36DB118722EA9D8 /* CMTSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTSlider.swift; path = CMTAutoBind/Classes/CMTSlider.swift; sourceTree = "<group>"; };
+		1202F9EDD3F547F7C5C8CFD249B23B3C /* CMTAutoBind-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CMTAutoBind-dummy.m"; sourceTree = "<group>"; };
+		1E0064BC19C14E49B9CBE0BE73324D4B /* Pods-CMTAutoBind_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CMTAutoBind_Tests.modulemap"; sourceTree = "<group>"; };
+		1E7786453CBA5968DA62CD64CC621FD8 /* CMTBindTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTBindTextField.swift; path = CMTAutoBind/Classes/CMTBindTextField.swift; sourceTree = "<group>"; };
+		2677C4AB30534DB6C08EEF569B6C6AF9 /* Pods-CMTAutoBind_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CMTAutoBind_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3E953C4B18321B7951F742E903B40046 /* CMTAutoBind-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CMTAutoBind-Info.plist"; sourceTree = "<group>"; };
+		41F209C2AD2C8DF650BA23BC5CE49CEF /* CMTSegmentedControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTSegmentedControl.swift; path = CMTAutoBind/Classes/CMTSegmentedControl.swift; sourceTree = "<group>"; };
+		463B8DF8215DF98ADBDCD2818920BEEF /* CMTBindLable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTBindLable.swift; path = CMTAutoBind/Classes/CMTBindLable.swift; sourceTree = "<group>"; };
+		48F9B11A16F1EA172911B466F6778AE9 /* CMTBindTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTBindTableViewCell.swift; path = CMTAutoBind/Classes/CMTBindTableViewCell.swift; sourceTree = "<group>"; };
+		4C0BE175C3BC89C54F6B7491819B95EB /* Pods-CMTAutoBind_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CMTAutoBind_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		52C4F39C481FFB690DAB9C310F90ABB1 /* CMTTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTTextField.swift; path = CMTAutoBind/Classes/CMTTextField.swift; sourceTree = "<group>"; };
+		54694A26CF2C429A40D5A77F2E9A55F6 /* CMTImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTImageView.swift; path = CMTAutoBind/Classes/CMTImageView.swift; sourceTree = "<group>"; };
+		555E820DBB4768CCC59520952397989D /* CMTBindImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTBindImageView.swift; path = CMTAutoBind/Classes/CMTBindImageView.swift; sourceTree = "<group>"; };
+		5B9F1B0DFC3CA51E65FD8035513D559F /* Pods-CMTAutoBind_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CMTAutoBind_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		5BBC87D6FC854182DF6D2CD99AA65345 /* CMTAutoBind.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CMTAutoBind.modulemap; sourceTree = "<group>"; };
+		5DDC0CC2BD66E767299EA77AD5DCA099 /* CMTBindSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTBindSlider.swift; path = CMTAutoBind/Classes/CMTBindSlider.swift; sourceTree = "<group>"; };
+		5EC8E19E476E5E32C21B415FA32E588C /* CMTAutoBind.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CMTAutoBind.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5F3D1534090B8BF780C630D511B1C18F /* CMTBind.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTBind.swift; path = CMTAutoBind/Classes/CMTBind.swift; sourceTree = "<group>"; };
+		64E08B0EF71045C73B8741ECE04D00A9 /* CMTBindPageControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTBindPageControl.swift; path = CMTAutoBind/Classes/CMTBindPageControl.swift; sourceTree = "<group>"; };
+		67367723DB05C6E463804026B94CD5E6 /* CMTAutoBind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CMTAutoBind.framework; path = CMTAutoBind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C5B3B12FA9809E3ACD20B2CC5B39913 /* CMTBindTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTBindTextView.swift; path = CMTAutoBind/Classes/CMTBindTextView.swift; sourceTree = "<group>"; };
+		6F4FB7E0CF39FCC72CBD834D741B8F96 /* CMTBindSegmentedControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTBindSegmentedControl.swift; path = CMTAutoBind/Classes/CMTBindSegmentedControl.swift; sourceTree = "<group>"; };
+		6F8F7F5C0CA22B22FD963664D257A6EF /* Pods-CMTAutoBind_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CMTAutoBind_Example-Info.plist"; sourceTree = "<group>"; };
+		71137DF45771B428CBE8F2B416D1C3AF /* Pods-CMTAutoBind_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CMTAutoBind_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		75549E7398661F678360441A757EBCEA /* CMTTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTTextView.swift; path = CMTAutoBind/Classes/CMTTextView.swift; sourceTree = "<group>"; };
+		75C4998BE868F1A7CC98638B8F8B55E4 /* CMTProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTProgressView.swift; path = CMTAutoBind/Classes/CMTProgressView.swift; sourceTree = "<group>"; };
+		76E140953925B05ECF06DF9DC23FBEBB /* Pods-CMTAutoBind_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CMTAutoBind_Example.modulemap"; sourceTree = "<group>"; };
+		81DDA6FBFC14DF829CEE5AB4920D2A0B /* CMTBindStepper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTBindStepper.swift; path = CMTAutoBind/Classes/CMTBindStepper.swift; sourceTree = "<group>"; };
+		82BDBF9D300E15EA503B60C6ACBDBCE0 /* CMTTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTTableViewCell.swift; path = CMTAutoBind/Classes/CMTTableViewCell.swift; sourceTree = "<group>"; };
+		83F9BF764D80136E2DFE4324DE7A1F1B /* CMTAutoBind-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CMTAutoBind-prefix.pch"; sourceTree = "<group>"; };
+		85D53F09EC7B9F941809F9AF064E4287 /* Pods-CMTAutoBind_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CMTAutoBind_Example-frameworks.sh"; sourceTree = "<group>"; };
+		8859A5D549718427E61D9381AC92B7EF /* CMTAutoBind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CMTAutoBind.debug.xcconfig; sourceTree = "<group>"; };
+		8AB7F7C431210C88C917D660FFDFF95C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		8D413B849D37A75DF1FB620C4060C380 /* Pods-CMTAutoBind_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CMTAutoBind_Example-dummy.m"; sourceTree = "<group>"; };
+		921EA30FFC2DD2F57007B4BC667AC76B /* CMTBindScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTBindScrollView.swift; path = CMTAutoBind/Classes/CMTBindScrollView.swift; sourceTree = "<group>"; };
+		92D453C3E51EF5E6948EE815C3459FD0 /* CMTLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTLabel.swift; path = CMTAutoBind/Classes/CMTLabel.swift; sourceTree = "<group>"; };
+		9364C45C18E4A8B6514F214A0555BB7B /* CMTButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTButton.swift; path = CMTAutoBind/Classes/CMTButton.swift; sourceTree = "<group>"; };
+		93E092F77E08AAD8A503CC2424AE47BD /* Pods-CMTAutoBind_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CMTAutoBind_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		946300812B9E3C4F1E2EFB0D1C685997 /* CMTAutoBind-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CMTAutoBind-umbrella.h"; sourceTree = "<group>"; };
+		948B5BDD921F965D93752439A3F13962 /* Pods-CMTAutoBind_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CMTAutoBind_Tests-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A425CAF3FAE3514196BEF0260149571C /* Pods-CMTAutoBind_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CMTAutoBind_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A9CA0F8F40045F39766C4E7A1989F3A3 /* CMTScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTScrollView.swift; path = CMTAutoBind/Classes/CMTScrollView.swift; sourceTree = "<group>"; };
+		B731A09A5EF7E69CC743B276D71A31C7 /* Pods_CMTAutoBind_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CMTAutoBind_Example.framework; path = "Pods-CMTAutoBind_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE8CDB86E596ADD13B47CFFD065DBC6C /* CMTStepper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTStepper.swift; path = CMTAutoBind/Classes/CMTStepper.swift; sourceTree = "<group>"; };
+		C0939312ADFA976C75E45440872A6C6C /* Pods_CMTAutoBind_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CMTAutoBind_Tests.framework; path = "Pods-CMTAutoBind_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBE1485A7CFBCC0E70F835DB2B2DD191 /* Pods-CMTAutoBind_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CMTAutoBind_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		D0F21141B6DEE355C4526AB04BB9EF67 /* CMTAutoBind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CMTAutoBind.release.xcconfig; sourceTree = "<group>"; };
+		D1CD46CEF6FBAC4FBDD2A3AAE51A0C5A /* CMTPageControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTPageControl.swift; path = CMTAutoBind/Classes/CMTPageControl.swift; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D657A1A73F598CCDAA350CB292E1E0F7 /* Pods-CMTAutoBind_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CMTAutoBind_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DCA00DF1F71FFE010D41F00344B324D9 /* CMTBindSwitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTBindSwitch.swift; path = CMTAutoBind/Classes/CMTBindSwitch.swift; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EB7A34A26C77192AFB6FF8A55A1AF257 /* CMTTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTTableView.swift; path = CMTAutoBind/Classes/CMTTableView.swift; sourceTree = "<group>"; };
+		EEE0F6889C49A46BFFCF547E41B19FE2 /* Pods-CMTAutoBind_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CMTAutoBind_Tests-dummy.m"; sourceTree = "<group>"; };
+		F1CA29FE7E32FD1D31EFD390F3FBB750 /* CMTSwitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTSwitch.swift; path = CMTAutoBind/Classes/CMTSwitch.swift; sourceTree = "<group>"; };
+		F5F97BC842558949CF211F8ABBB501C3 /* Pods-CMTAutoBind_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CMTAutoBind_Example-umbrella.h"; sourceTree = "<group>"; };
+		F619D4A705B173E3CE61E3A4CB4E119B /* CMTBindTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTBindTableView.swift; path = CMTAutoBind/Classes/CMTBindTableView.swift; sourceTree = "<group>"; };
+		F7B4022EDAAA54D38677F37E2F1CF52E /* CMTControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTControl.swift; path = CMTAutoBind/Classes/CMTControl.swift; sourceTree = "<group>"; };
+		FEBDB037E9688629E228BEF917369FCB /* CMTBindProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTBindProgressView.swift; path = CMTAutoBind/Classes/CMTBindProgressView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		649F2B292BE1873094E5B446F491D0A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				687468B9B002C5652197562E192E1664 /* Foundation.framework in Frameworks */,
+				93973FB3A05883331BB161642E2A34C3 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		860C68B2213F2F1509E7D5BF1BAA6376 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1800B9EE960D824A28A058B38B106C5B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF8CD16D559E7F36CD78A52BBE03653 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B71AD0AE11003D67D2D6886731B357DF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0166BD077ADEF220227E80BB74AD42D6 /* Pods-CMTAutoBind_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1E0064BC19C14E49B9CBE0BE73324D4B /* Pods-CMTAutoBind_Tests.modulemap */,
+				4C0BE175C3BC89C54F6B7491819B95EB /* Pods-CMTAutoBind_Tests-acknowledgements.markdown */,
+				93E092F77E08AAD8A503CC2424AE47BD /* Pods-CMTAutoBind_Tests-acknowledgements.plist */,
+				EEE0F6889C49A46BFFCF547E41B19FE2 /* Pods-CMTAutoBind_Tests-dummy.m */,
+				0B5CF9DF07E10CC551469632EA0DC4EB /* Pods-CMTAutoBind_Tests-Info.plist */,
+				948B5BDD921F965D93752439A3F13962 /* Pods-CMTAutoBind_Tests-umbrella.h */,
+				2677C4AB30534DB6C08EEF569B6C6AF9 /* Pods-CMTAutoBind_Tests.debug.xcconfig */,
+				71137DF45771B428CBE8F2B416D1C3AF /* Pods-CMTAutoBind_Tests.release.xcconfig */,
+			);
+			name = "Pods-CMTAutoBind_Tests";
+			path = "Target Support Files/Pods-CMTAutoBind_Tests";
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		235092FE75467194DA3310F51B7498D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67367723DB05C6E463804026B94CD5E6 /* CMTAutoBind.framework */,
+				B731A09A5EF7E69CC743B276D71A31C7 /* Pods_CMTAutoBind_Example.framework */,
+				C0939312ADFA976C75E45440872A6C6C /* Pods_CMTAutoBind_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25099EDC4B563FF17077A1B3F4E7F359 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE60CDD705743307C5C80D3F595F180A /* Pods-CMTAutoBind_Example */,
+				0166BD077ADEF220227E80BB74AD42D6 /* Pods-CMTAutoBind_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		480BE96655A8F6236BAE9288B104751F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BBC87D6FC854182DF6D2CD99AA65345 /* CMTAutoBind.modulemap */,
+				1202F9EDD3F547F7C5C8CFD249B23B3C /* CMTAutoBind-dummy.m */,
+				3E953C4B18321B7951F742E903B40046 /* CMTAutoBind-Info.plist */,
+				83F9BF764D80136E2DFE4324DE7A1F1B /* CMTAutoBind-prefix.pch */,
+				946300812B9E3C4F1E2EFB0D1C685997 /* CMTAutoBind-umbrella.h */,
+				8859A5D549718427E61D9381AC92B7EF /* CMTAutoBind.debug.xcconfig */,
+				D0F21141B6DEE355C4526AB04BB9EF67 /* CMTAutoBind.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CMTAutoBind";
+			sourceTree = "<group>";
+		};
+		55B50BADF0C6C388A4841DEE4029DF4E /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76003B7514345404B85A8D4570D34B2B /* CMTAutoBind */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		76003B7514345404B85A8D4570D34B2B /* CMTAutoBind */ = {
+			isa = PBXGroup;
+			children = (
+				5F3D1534090B8BF780C630D511B1C18F /* CMTBind.swift */,
+				100CC8049EDE784CD5DE415A35D97C7D /* CMTBindButton.swift */,
+				0EFBE201381FB2F2039F12FDF49DAA4E /* CMTBindControl.swift */,
+				555E820DBB4768CCC59520952397989D /* CMTBindImageView.swift */,
+				463B8DF8215DF98ADBDCD2818920BEEF /* CMTBindLable.swift */,
+				64E08B0EF71045C73B8741ECE04D00A9 /* CMTBindPageControl.swift */,
+				FEBDB037E9688629E228BEF917369FCB /* CMTBindProgressView.swift */,
+				921EA30FFC2DD2F57007B4BC667AC76B /* CMTBindScrollView.swift */,
+				6F4FB7E0CF39FCC72CBD834D741B8F96 /* CMTBindSegmentedControl.swift */,
+				5DDC0CC2BD66E767299EA77AD5DCA099 /* CMTBindSlider.swift */,
+				81DDA6FBFC14DF829CEE5AB4920D2A0B /* CMTBindStepper.swift */,
+				DCA00DF1F71FFE010D41F00344B324D9 /* CMTBindSwitch.swift */,
+				F619D4A705B173E3CE61E3A4CB4E119B /* CMTBindTableView.swift */,
+				48F9B11A16F1EA172911B466F6778AE9 /* CMTBindTableViewCell.swift */,
+				1E7786453CBA5968DA62CD64CC621FD8 /* CMTBindTextField.swift */,
+				6C5B3B12FA9809E3ACD20B2CC5B39913 /* CMTBindTextView.swift */,
+				0699366D4A6E6BC9A7193A8757DF9A00 /* CMTBindView.swift */,
+				9364C45C18E4A8B6514F214A0555BB7B /* CMTButton.swift */,
+				F7B4022EDAAA54D38677F37E2F1CF52E /* CMTControl.swift */,
+				54694A26CF2C429A40D5A77F2E9A55F6 /* CMTImageView.swift */,
+				92D453C3E51EF5E6948EE815C3459FD0 /* CMTLabel.swift */,
+				D1CD46CEF6FBAC4FBDD2A3AAE51A0C5A /* CMTPageControl.swift */,
+				75C4998BE868F1A7CC98638B8F8B55E4 /* CMTProgressView.swift */,
+				A9CA0F8F40045F39766C4E7A1989F3A3 /* CMTScrollView.swift */,
+				41F209C2AD2C8DF650BA23BC5CE49CEF /* CMTSegmentedControl.swift */,
+				11E9663F125DD01DF36DB118722EA9D8 /* CMTSlider.swift */,
+				BE8CDB86E596ADD13B47CFFD065DBC6C /* CMTStepper.swift */,
+				F1CA29FE7E32FD1D31EFD390F3FBB750 /* CMTSwitch.swift */,
+				EB7A34A26C77192AFB6FF8A55A1AF257 /* CMTTableView.swift */,
+				82BDBF9D300E15EA503B60C6ACBDBCE0 /* CMTTableViewCell.swift */,
+				52C4F39C481FFB690DAB9C310F90ABB1 /* CMTTextField.swift */,
+				75549E7398661F678360441A757EBCEA /* CMTTextView.swift */,
+				03837145308FDA681FC5B730CABB76FF /* CMTView.swift */,
+				D7E792D2B31842534FE2B4DFC1FE34B0 /* Pod */,
+				480BE96655A8F6236BAE9288B104751F /* Support Files */,
+			);
+			name = CMTAutoBind;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				55B50BADF0C6C388A4841DEE4029DF4E /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				235092FE75467194DA3310F51B7498D3 /* Products */,
+				25099EDC4B563FF17077A1B3F4E7F359 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D7E792D2B31842534FE2B4DFC1FE34B0 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				5EC8E19E476E5E32C21B415FA32E588C /* CMTAutoBind.podspec */,
+				8AB7F7C431210C88C917D660FFDFF95C /* LICENSE */,
+				0AF24D4905375CE3E7964DA973A446DA /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		FE60CDD705743307C5C80D3F595F180A /* Pods-CMTAutoBind_Example */ = {
+			isa = PBXGroup;
+			children = (
+				76E140953925B05ECF06DF9DC23FBEBB /* Pods-CMTAutoBind_Example.modulemap */,
+				D657A1A73F598CCDAA350CB292E1E0F7 /* Pods-CMTAutoBind_Example-acknowledgements.markdown */,
+				CBE1485A7CFBCC0E70F835DB2B2DD191 /* Pods-CMTAutoBind_Example-acknowledgements.plist */,
+				8D413B849D37A75DF1FB620C4060C380 /* Pods-CMTAutoBind_Example-dummy.m */,
+				85D53F09EC7B9F941809F9AF064E4287 /* Pods-CMTAutoBind_Example-frameworks.sh */,
+				6F8F7F5C0CA22B22FD963664D257A6EF /* Pods-CMTAutoBind_Example-Info.plist */,
+				F5F97BC842558949CF211F8ABBB501C3 /* Pods-CMTAutoBind_Example-umbrella.h */,
+				5B9F1B0DFC3CA51E65FD8035513D559F /* Pods-CMTAutoBind_Example.debug.xcconfig */,
+				A425CAF3FAE3514196BEF0260149571C /* Pods-CMTAutoBind_Example.release.xcconfig */,
+			);
+			name = "Pods-CMTAutoBind_Example";
+			path = "Target Support Files/Pods-CMTAutoBind_Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0619B43E275DD4EA652A05B3F295B4CB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23C0BCB2D4938CFE3A1C752404984DF3 /* CMTAutoBind-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E870EF0A01A786F909DD413B2A3AC14B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D05FA6BACF8A95EEF3AE69F99B278890 /* Pods-CMTAutoBind_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEE2920F9D61FCB67C81F1FAAEA71A11 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD58B86DCE15C205E5CC5E66199E9CD2 /* Pods-CMTAutoBind_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		877192997EB337658AAAABB517D21FD5 /* Pods-CMTAutoBind_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 994B3B542E522B69888E54D8DCB084F8 /* Build configuration list for PBXNativeTarget "Pods-CMTAutoBind_Example" */;
+			buildPhases = (
+				FEE2920F9D61FCB67C81F1FAAEA71A11 /* Headers */,
+				38B9F0E8B768E20321054F1348DBF59C /* Sources */,
+				860C68B2213F2F1509E7D5BF1BAA6376 /* Frameworks */,
+				CB7FFAAE24215380EB4A462BD20AA6F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E7D163CA6C11C3A069F090BCC78BA27 /* PBXTargetDependency */,
+			);
+			name = "Pods-CMTAutoBind_Example";
+			productName = "Pods-CMTAutoBind_Example";
+			productReference = B731A09A5EF7E69CC743B276D71A31C7 /* Pods_CMTAutoBind_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A0B796AFE83AFB59031335F481D62958 /* CMTAutoBind */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 270FC797256CA36FF4421595A589D114 /* Build configuration list for PBXNativeTarget "CMTAutoBind" */;
+			buildPhases = (
+				0619B43E275DD4EA652A05B3F295B4CB /* Headers */,
+				84FC5C999D9ED72A6A2FE8A4E5E3DB7B /* Sources */,
+				649F2B292BE1873094E5B446F491D0A9 /* Frameworks */,
+				1F38954D3C669DB4976460893524F9CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CMTAutoBind;
+			productName = CMTAutoBind;
+			productReference = 67367723DB05C6E463804026B94CD5E6 /* CMTAutoBind.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A95229C1C9D312A17E487BFD3AC5511A /* Pods-CMTAutoBind_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F1A34E86341ED14AED11F77C8EE1475 /* Build configuration list for PBXNativeTarget "Pods-CMTAutoBind_Tests" */;
+			buildPhases = (
+				E870EF0A01A786F909DD413B2A3AC14B /* Headers */,
+				46F6BEF646296795353AF37459D1623C /* Sources */,
+				9EF8CD16D559E7F36CD78A52BBE03653 /* Frameworks */,
+				AB9696D496240DAD00506F7E44245B22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19DEE45E0EDFC92EA9C69E2DDA646A57 /* PBXTargetDependency */,
+			);
+			name = "Pods-CMTAutoBind_Tests";
+			productName = "Pods-CMTAutoBind_Tests";
+			productReference = C0939312ADFA976C75E45440872A6C6C /* Pods_CMTAutoBind_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 235092FE75467194DA3310F51B7498D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0B796AFE83AFB59031335F481D62958 /* CMTAutoBind */,
+				877192997EB337658AAAABB517D21FD5 /* Pods-CMTAutoBind_Example */,
+				A95229C1C9D312A17E487BFD3AC5511A /* Pods-CMTAutoBind_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F38954D3C669DB4976460893524F9CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB9696D496240DAD00506F7E44245B22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB7FFAAE24215380EB4A462BD20AA6F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38B9F0E8B768E20321054F1348DBF59C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56BAEEBCA71994A27EA6A6D903914725 /* Pods-CMTAutoBind_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46F6BEF646296795353AF37459D1623C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C49B33FF812CDA4B9EC16421C79C9E74 /* Pods-CMTAutoBind_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FC5C999D9ED72A6A2FE8A4E5E3DB7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				678913231BCD3D660B4E834DC99374FE /* CMTAutoBind-dummy.m in Sources */,
+				2764F3C844946590CC7CABC5D1559DD1 /* CMTBind.swift in Sources */,
+				1DB5126AC882354B26C66C81BA3B3271 /* CMTBindButton.swift in Sources */,
+				2165DEF52418957420E776774DAA1AD8 /* CMTBindControl.swift in Sources */,
+				F8E42B2257A22561A807DA624E67B925 /* CMTBindImageView.swift in Sources */,
+				108E8E62C5A4BB0C458B6EA2364640D7 /* CMTBindLable.swift in Sources */,
+				8FBF9F79C1CD2026CCCDB576DF22D85A /* CMTBindPageControl.swift in Sources */,
+				1B1199F819853C821D0D63D92AF72A22 /* CMTBindProgressView.swift in Sources */,
+				46CB690A9A8A6CCED518AD2AC764E191 /* CMTBindScrollView.swift in Sources */,
+				DCECB5F9351B3A6B8EC6C34A47A2E43C /* CMTBindSegmentedControl.swift in Sources */,
+				0581070B6CB66B1E3097630DCBE4A659 /* CMTBindSlider.swift in Sources */,
+				0D05698A75DEF9AC2F08B2F532552774 /* CMTBindStepper.swift in Sources */,
+				E8A9F22BBAFB8F5577F6294EA8093724 /* CMTBindSwitch.swift in Sources */,
+				C67F6510FB9FFC180E6C4C7CFDB5CF21 /* CMTBindTableView.swift in Sources */,
+				8216EEE2871B019EC6B7D61BC1CB45E6 /* CMTBindTableViewCell.swift in Sources */,
+				1979432431D71846817A6137E3167623 /* CMTBindTextField.swift in Sources */,
+				607F8D72783C9BA965B83FAB97DF97DA /* CMTBindTextView.swift in Sources */,
+				9641F669310376472552FA832C709FCB /* CMTBindView.swift in Sources */,
+				F2EEE23A3A1180CFA902CF7E40062C44 /* CMTButton.swift in Sources */,
+				8F0BA8E32E4478527F10ABB79BCF4500 /* CMTControl.swift in Sources */,
+				9251E9D7C8EF8EBADEF3C0961EA478E0 /* CMTImageView.swift in Sources */,
+				552E1C686843C5D46DD328B3CE6877BD /* CMTLabel.swift in Sources */,
+				8803866574C0A8BC9D4274A2FE7762F7 /* CMTPageControl.swift in Sources */,
+				BAA81C2D5858665822FEE624EBABEAC2 /* CMTProgressView.swift in Sources */,
+				B097E58A59E804A7228795E0135992A3 /* CMTScrollView.swift in Sources */,
+				4131B52D8D3A7AD6114196CDA3AF7AE9 /* CMTSegmentedControl.swift in Sources */,
+				B14ACB0861A3E4BF20A8467EF643B113 /* CMTSlider.swift in Sources */,
+				2246E2584B13273A92489E9C5811DF70 /* CMTStepper.swift in Sources */,
+				5313514D5625A7D02DB8057D4CAA24F1 /* CMTSwitch.swift in Sources */,
+				BE3E5BFC11290B627B76F46B915B74C7 /* CMTTableView.swift in Sources */,
+				CB787D717960E5568F6A466D30DC2C48 /* CMTTableViewCell.swift in Sources */,
+				C19ED8437D3CFEBE6D05664E0A3965E5 /* CMTTextField.swift in Sources */,
+				5BB45470777B36910322C91227A99DEC /* CMTTextView.swift in Sources */,
+				B970DCF39332BBE7E5A9F4C97D7F3897 /* CMTView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19DEE45E0EDFC92EA9C69E2DDA646A57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CMTAutoBind_Example";
+			target = 877192997EB337658AAAABB517D21FD5 /* Pods-CMTAutoBind_Example */;
+			targetProxy = ABDD038931F16426E353F323C06B7B6E /* PBXContainerItemProxy */;
+		};
+		4E7D163CA6C11C3A069F090BCC78BA27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CMTAutoBind;
+			target = A0B796AFE83AFB59031335F481D62958 /* CMTAutoBind */;
+			targetProxy = 15BD82DCF2B2422F6F252371B1210B45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1C0309E4C0862D7453448662DE89FF43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A425CAF3FAE3514196BEF0260149571C /* Pods-CMTAutoBind_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CMTAutoBind_Example/Pods-CMTAutoBind_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CMTAutoBind_Example/Pods-CMTAutoBind_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		425473229CB7DCB8490120FC560EFEE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B9F1B0DFC3CA51E65FD8035513D559F /* Pods-CMTAutoBind_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CMTAutoBind_Example/Pods-CMTAutoBind_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CMTAutoBind_Example/Pods-CMTAutoBind_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		43E1FB24474781B8CB7FC1A381D3A110 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71137DF45771B428CBE8F2B416D1C3AF /* Pods-CMTAutoBind_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CMTAutoBind_Tests/Pods-CMTAutoBind_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CMTAutoBind_Tests/Pods-CMTAutoBind_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7087A1E8D06E08A7FD2F8CFA5CF182D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8859A5D549718427E61D9381AC92B7EF /* CMTAutoBind.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CMTAutoBind/CMTAutoBind-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CMTAutoBind/CMTAutoBind-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CMTAutoBind/CMTAutoBind.modulemap";
+				PRODUCT_MODULE_NAME = CMTAutoBind;
+				PRODUCT_NAME = CMTAutoBind;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BF515BC41FB8D0A2EB51CA55D2B9BBE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2677C4AB30534DB6C08EEF569B6C6AF9 /* Pods-CMTAutoBind_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CMTAutoBind_Tests/Pods-CMTAutoBind_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CMTAutoBind_Tests/Pods-CMTAutoBind_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D532B105FE65F65DBD59353556644853 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0F21141B6DEE355C4526AB04BB9EF67 /* CMTAutoBind.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CMTAutoBind/CMTAutoBind-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CMTAutoBind/CMTAutoBind-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CMTAutoBind/CMTAutoBind.modulemap";
+				PRODUCT_MODULE_NAME = CMTAutoBind;
+				PRODUCT_NAME = CMTAutoBind;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		270FC797256CA36FF4421595A589D114 /* Build configuration list for PBXNativeTarget "CMTAutoBind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7087A1E8D06E08A7FD2F8CFA5CF182D3 /* Debug */,
+				D532B105FE65F65DBD59353556644853 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F1A34E86341ED14AED11F77C8EE1475 /* Build configuration list for PBXNativeTarget "Pods-CMTAutoBind_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF515BC41FB8D0A2EB51CA55D2B9BBE2 /* Debug */,
+				43E1FB24474781B8CB7FC1A381D3A110 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		994B3B542E522B69888E54D8DCB084F8 /* Build configuration list for PBXNativeTarget "Pods-CMTAutoBind_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				425473229CB7DCB8490120FC560EFEE7 /* Debug */,
+				1C0309E4C0862D7453448662DE89FF43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
