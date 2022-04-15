@@ -22,12 +22,17 @@ protocol CMTViewBindUpdateProtocol: CMTBindUploadProtocol {
     func updateIsHidden(_ isHidden: Bool?)
     func updateContentMode(_ contentMode: UIView.ContentMode?)
     func updateTintColor(_ tintColor: UIColor?)
+    
+    func bindGestureRecognizer(_ tap: UIGestureRecognizer)
 }
 
 open class CMTBindView: CMTBind {
     init(_ over: CMTViewBindUpdateProtocol) {
         super.init(over)
     }
+    
+    private var onTapBlock: ((UIGestureRecognizer) -> Void)?
+    private var onLongPressBlock: ((UIGestureRecognizer) -> Void)?
     
     public weak var frame: CMTObserver<CGRect>? {
         didSet {
@@ -125,4 +130,23 @@ open class CMTBindView: CMTBind {
         }
     }
 
+    public func addTapGesture(_ tapBlock: @escaping (UIGestureRecognizer) -> Void) {
+        self.onTapBlock = tapBlock
+        let gr = UITapGestureRecognizer.init(target: self, action: #selector(onTap(_:)))
+        (self.bindOver as? CMTViewBindUpdateProtocol)?.bindGestureRecognizer(gr)
+    }
+    
+    public func addLongPressGesture(_ tapBlock: @escaping (UIGestureRecognizer) -> Void) {
+        self.onTapBlock = tapBlock
+        let gr = UILongPressGestureRecognizer.init(target: self, action: #selector(onLongPress(_:)))
+        (self.bindOver as? CMTViewBindUpdateProtocol)?.bindGestureRecognizer(gr)
+    }
+    
+    @objc private func onTap(_ gesture: UIGestureRecognizer) {
+        self.onTapBlock?(gesture)
+    }
+    
+    @objc private func onLongPress(_ gesture: UIGestureRecognizer) {
+        self.onLongPressBlock?(gesture)
+    }
 }

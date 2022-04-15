@@ -129,6 +129,9 @@ open class CMTButton: UIButton, CMTBindButtonBindUpdateProtocol {
         self.setAttributedTitle(attributedTitle, for: .selected)
     }
     
+    func bindTarget(_ target: Any?, selector: Selector, events: UIControlEvents) {
+        self.addTarget(target, action: selector, for: events)
+    }
 }
 
 extension CMTButton {
@@ -200,6 +203,10 @@ extension CMTButton {
     
     func updateTintColor(_ tintColor: UIColor?) {
         self.tintColor = tintColor
+    }
+    
+    func bindGestureRecognizer(_ tap: UIGestureRecognizer) {
+        self.addGestureRecognizer(tap)
     }
 }
 

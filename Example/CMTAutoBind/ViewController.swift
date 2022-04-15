@@ -22,19 +22,26 @@ class ViewController: UIViewController {
         
         let label = CMTLabel.init(frame: CGRect.init(x: 100, y: 100, width: 100, height: 100))
         label.bind.text = observer
+        label.isUserInteractionEnabled = true
         label.bind.backgroundColor = observerBackGroundColor
+        label.bind.addTapGesture { gr in
+            print(gr.view)
+        }
         self.view.addSubview(label)
         
         let button = CMTButton.init(type: .system)
         button.frame = CGRect.init(x: 100, y: 200, width: 100, height: 100)
         button.bind.normalTitle = observer2
+        button.bind.addClickOnTouchUpInside { [weak self] btn in
+            self?.btnAction(btn)
+        }
         button.addTarget(self, action: #selector(btnAction(_:)), for: .touchUpInside)
         self.view.addSubview(button)
         
         let label22 = CMTLabel.init(frame: CGRect.init(x: 100, y: 300, width: 100, height: 100))
         label22.bind.text = observer?.addListener({ v1, v2 in
             print("label22 v1=\(String(describing: v1)), v2=\(String(describing: v2))")
-            return true
+            return false
         })
         label22.bind.backgroundColor = observerBackGroundColor
         self.view.addSubview(label22)

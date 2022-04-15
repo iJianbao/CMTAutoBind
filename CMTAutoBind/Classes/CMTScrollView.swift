@@ -184,4 +184,8 @@ extension CMTScrollView {
     func updateTintColor(_ tintColor: UIColor?) {
         self.tintColor = tintColor
     }
+    
+    func bindGestureRecognizer(_ tap: UIGestureRecognizer) {
+        self.addGestureRecognizer(tap)
+    }
 }

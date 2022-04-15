@@ -46,6 +46,8 @@ protocol CMTBindButtonBindUpdateProtocol: CMTControlBindUpdateProtocol {
     func updateHighlightedAttributedTitle(_ attributedTitle: NSAttributedString?)
     func updateDisabledAttributedTitle(_ attributedTitle: NSAttributedString?)
     func updateSelectedAttributedTitle(_ attributedTitle: NSAttributedString?)
+    
+    func bindTarget(_ target: Any?, selector: Selector, events: UIControlEvents);
 }
 
 
@@ -54,6 +56,11 @@ open class CMTBindButton: CMTBindControl {
     init(_ over: CMTBindButtonBindUpdateProtocol) {
         super.init(over)
     }
+    
+    private var touchUpInsideBlock: ((CMTButton) -> Void)?
+    private var touchCancelBlock: ((CMTButton) -> Void)?
+    private var touchDownBlock: ((CMTButton) -> Void)?
+    private var touchUpOutsideBlock: ((CMTButton) -> Void)?
     
     public weak var normalTitle: CMTObserver<String>? {
         didSet {
@@ -293,6 +300,46 @@ open class CMTBindButton: CMTBindControl {
                 (self?.bindOver as? CMTBindButtonBindUpdateProtocol)?.updateSelectedAttributedTitle(t)
             }
         }
+    }
+    
+    public func addClickOnTouchUpInside(_ onTouch: @escaping (CMTButton) -> Void) {
+        self.touchUpInsideBlock = onTouch
+        
+        (self.bindOver as? CMTBindButtonBindUpdateProtocol)?.bindTarget(self, selector: #selector(onTouchUpInsideClick(_:)), events: .touchUpInside)
+    }
+    
+    public func addClickOnTouchCancel(_ onTouch: @escaping (CMTButton) -> Void) {
+        self.touchCancelBlock = onTouch
+        
+        (self.bindOver as? CMTBindButtonBindUpdateProtocol)?.bindTarget(self, selector: #selector(onTouchCancelClick(_:)), events: .touchCancel)
+    }
+    
+    public func addClickOnTouchDown(_ onTouch: @escaping (CMTButton) -> Void) {
+        self.touchDownBlock = onTouch
+        
+        (self.bindOver as? CMTBindButtonBindUpdateProtocol)?.bindTarget(self, selector: #selector(onTouchDownClick(_:)), events: .touchDown)
+    }
+    
+    public func addClickOnTouchUpOutside(_ onTouch: @escaping (CMTButton) -> Void) {
+        self.touchUpOutsideBlock = onTouch
+        
+        (self.bindOver as? CMTBindButtonBindUpdateProtocol)?.bindTarget(self, selector: #selector(onTouchUpOutsideClick(_:)), events: .touchUpOutside)
+    }
+    
+    @objc private func onTouchUpInsideClick(_ btn: CMTButton) {
+        self.touchUpInsideBlock?(btn)
+    }
+    
+    @objc private func onTouchCancelClick(_ btn: CMTButton) {
+        self.touchCancelBlock?(btn)
+    }
+    
+    @objc private func onTouchDownClick(_ btn: CMTButton) {
+        self.touchDownBlock?(btn)
+    }
+    
+    @objc private func onTouchUpOutsideClick(_ btn: CMTButton) {
+        self.touchUpOutsideBlock?(btn)
     }
 }
 
