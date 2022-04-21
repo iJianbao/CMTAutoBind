@@ -14,11 +14,11 @@ open class CMTSegmentedControl: UISegmentedControl, CMTBindSegmentedControlBindU
     }()
     
     func updateIsMomentary(_ isMomentary: Bool?) {
-        self.isMomentary = isMomentary ?? false
+        self.isMomentary = isMomentary ?? self.isMomentary
     }
     
     func updateApportionsSegmentWidthsByContent(_ apportionsSegmentWidthsByContent: Bool?) {
-        self.apportionsSegmentWidthsByContent = apportionsSegmentWidthsByContent ?? false
+        self.apportionsSegmentWidthsByContent = apportionsSegmentWidthsByContent ?? self.apportionsSegmentWidthsByContent
     }
 
     func updateSelectedSegmentIndex(_ selectedSegmentIndex: Int?) {
@@ -36,41 +36,41 @@ open class CMTSegmentedControl: UISegmentedControl, CMTBindSegmentedControlBindU
 
 extension CMTSegmentedControl {
     func updateIsEnabled(_ isEnabled: Bool?) {
-        self.isEnabled = isEnabled ?? true
+        self.isEnabled = isEnabled ?? self.isEnabled
     }
     
     func updateIsSelected(_ isSelected: Bool?) {
-        self.isSelected = isSelected ?? false
+        self.isSelected = isSelected ?? self.isSelected
     }
     
     func updateIsHighlighted(_ isHighlighted: Bool?) {
-        self.isHighlighted = isHighlighted ?? false
+        self.isHighlighted = isHighlighted ?? self.isHighlighted
     }
     
     func updateContentVerticalAlignment(_ contentVerticalAlignment: UIControl.ContentVerticalAlignment?) {
-        self.contentVerticalAlignment = contentVerticalAlignment ?? .center
+        self.contentVerticalAlignment = contentVerticalAlignment ?? self.contentVerticalAlignment
     }
     
     func updateContentHorizontalAlignment(_ contentHorizontalAlignment: UIControl.ContentHorizontalAlignment?) {
-        self.contentHorizontalAlignment = contentHorizontalAlignment ?? .center
+        self.contentHorizontalAlignment = contentHorizontalAlignment ?? self.contentHorizontalAlignment
     }
 }
 
 extension CMTSegmentedControl {
     func updateFrame(_ frame: CGRect?) {
-        self.frame = frame ?? CGRect.zero
+        self.frame = frame ?? self.frame
     }
     
     func updateBounds(_ bounds: CGRect?) {
-        self.bounds = bounds ?? CGRect.zero
+        self.bounds = bounds ?? self.bounds
     }
     
     func updateCenter(_ center: CGPoint?) {
-        self.center = center ?? CGPoint.zero
+        self.center = center ?? self.center
     }
     
     func updateTransform(_ transform: CGAffineTransform?) {
-        self.transform = transform ?? CGAffineTransform.identity
+        self.transform = transform ?? self.transform
     }
     
     func updateBackgroundColor(_ color: UIColor?) {
@@ -78,27 +78,29 @@ extension CMTSegmentedControl {
     }
     
     func updateClipsToBounds(_ clipsToBounds: Bool?) {
-        self.clipsToBounds = clipsToBounds ?? false
+        self.clipsToBounds = clipsToBounds ?? self.clipsToBounds
     }
     
     func updateAlpha(_ alpha: Float?) {
-        self.alpha = CGFloat(alpha ?? 1)
+        if let a = alpha {
+            self.alpha = CGFloat(a)
+        }
     }
     
     func updateIsOpaque(_ isOpaque: Bool?) {
-        self.isOpaque = isOpaque ?? true
+        self.isOpaque = isOpaque ?? self.isOpaque
     }
     
     func updateClearsContextBeforeDrawing(_ clearsContextBeforeDrawing: Bool?) {
-        self.clearsContextBeforeDrawing = clearsContextBeforeDrawing ?? true
+        self.clearsContextBeforeDrawing = clearsContextBeforeDrawing ?? self.clearsContextBeforeDrawing
     }
     
     func updateIsHidden(_ isHidden: Bool?) {
-        self.isHidden = isHidden ?? false
+        self.isHidden = isHidden ?? self.isHidden
     }
     
     func updateContentMode(_ contentMode: UIView.ContentMode?) {
-        self.contentMode = contentMode ?? .scaleToFill
+        self.contentMode = contentMode ?? self.contentMode
     }
     
     func updateTintColor(_ tintColor: UIColor?) {

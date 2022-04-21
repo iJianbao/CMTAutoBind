@@ -14,7 +14,7 @@ open class CMTTextView: UITextView, CMTBindTextViewBindUpdateProtocol {
     }()
     
     func updateText(_ text: String?) {
-        self.text = text ?? ""
+        self.text = text ?? self.text
     }
     
     func updateFont(_ font: UIFont?) {
@@ -26,7 +26,7 @@ open class CMTTextView: UITextView, CMTBindTextViewBindUpdateProtocol {
     }
     
     func updateTextAlignment(_ textAlignment: NSTextAlignment?) {
-        self.textAlignment = textAlignment ?? .left
+        self.textAlignment = textAlignment ?? self.textAlignment
     }
     
     func updateSelectedRange(_ selectedRange: NSRange?) {
@@ -37,19 +37,19 @@ open class CMTTextView: UITextView, CMTBindTextViewBindUpdateProtocol {
     }
     
     func updateIsEditable(_ isEditable: Bool?) {
-        self.isEditable = isEditable ?? true
+        self.isEditable = isEditable ?? self.isEditable
     }
     
     func updateIsSelectable(_ isSelectable: Bool?) {
-        self.isSelectable = isSelectable ?? false
+        self.isSelectable = isSelectable ?? self.isSelectable
     }
     
     func updateDataDetectorTypes(_ dataDetectorTypes: UIDataDetectorTypes?) {
-        self.dataDetectorTypes = dataDetectorTypes ?? .all
+        self.dataDetectorTypes = dataDetectorTypes ?? self.dataDetectorTypes
     }
 
     func updateAllowsEditingTextAttributes(_ allowsEditingTextAttributes: Bool?) {
-        self.allowsEditingTextAttributes = allowsEditingTextAttributes ?? false
+        self.allowsEditingTextAttributes = allowsEditingTextAttributes ?? self.allowsEditingTextAttributes
     }
 
     func updateAttributedText(_ attributedText: NSAttributedString?) {
@@ -81,7 +81,7 @@ open class CMTTextView: UITextView, CMTBindTextViewBindUpdateProtocol {
     }
     
     func updateClearsOnInsertion(_ clearsOnInsertion: Bool?) {
-        self.clearsOnInsertion = clearsOnInsertion ?? false
+        self.clearsOnInsertion = clearsOnInsertion ?? self.clearsOnInsertion
     }
     
     func updateTextContainerInset(_ textContainerInset: UIEdgeInsets?) {
@@ -125,25 +125,25 @@ open class CMTTextView: UITextView, CMTBindTextViewBindUpdateProtocol {
 
 extension CMTTextView {
     func updateContentOffset(_ contentOffset: CGPoint?) {
-        self.contentOffset = contentOffset ?? .zero
+        self.contentOffset = contentOffset ?? self.contentOffset
     }
     
     func updateContentSize(_ contentSize: CGSize?) {
-        self.contentSize = contentSize ?? .zero
+        self.contentSize = contentSize ?? self.contentSize
     }
     
     func updateContentInset(_ contentInset: UIEdgeInsets?) {
-        self.contentInset = contentInset ?? .zero
+        self.contentInset = contentInset ?? self.contentInset
     }
     
     @available(iOS 11.0, *)
     func updateContentInsetAdjustmentBehavior(_ contentInsetAdjustmentBehavior: UIScrollView.ContentInsetAdjustmentBehavior?) {
-        self.contentInsetAdjustmentBehavior = contentInsetAdjustmentBehavior ?? .automatic
+        self.contentInsetAdjustmentBehavior = contentInsetAdjustmentBehavior ?? self.contentInsetAdjustmentBehavior
     }
 
     @available(iOS 13.0, *)
     func updateAutomaticallyAdjustsScrollIndicatorInsets(_ automaticallyAdjustsScrollIndicatorInsets: Bool?) {
-        self.automaticallyAdjustsScrollIndicatorInsets = automaticallyAdjustsScrollIndicatorInsets ?? true
+        self.automaticallyAdjustsScrollIndicatorInsets = automaticallyAdjustsScrollIndicatorInsets ?? self.automaticallyAdjustsScrollIndicatorInsets
     }
     
     func updateDelegate(_ delegate: UIScrollViewDelegate?) {
@@ -151,39 +151,39 @@ extension CMTTextView {
     }
     
     func updateIsDirectionalLockEnabled(_ isDirectionalLockEnabled: Bool?) {
-        self.isDirectionalLockEnabled = isDirectionalLockEnabled ?? false
+        self.isDirectionalLockEnabled = isDirectionalLockEnabled ?? self.isDirectionalLockEnabled
     }
     
     func updateBounces(_ bounces: Bool?) {
-        self.bounces = bounces ?? true
+        self.bounces = bounces ?? self.bounces
     }
     
     func updateAlwaysBounceVertical(_ alwaysBounceVertical: Bool?) {
-        self.alwaysBounceVertical = alwaysBounceVertical ?? false
+        self.alwaysBounceVertical = alwaysBounceVertical ?? self.alwaysBounceVertical
     }
 
     func updateAlwaysBounceHorizontal(_ alwaysBounceHorizontal: Bool?) {
-        self.alwaysBounceHorizontal = alwaysBounceHorizontal ?? false
+        self.alwaysBounceHorizontal = alwaysBounceHorizontal ?? self.alwaysBounceHorizontal
     }
     
     func updateIsPagingEnabled(_ isPagingEnabled: Bool?) {
-        self.isPagingEnabled = isPagingEnabled ?? false
+        self.isPagingEnabled = isPagingEnabled ?? self.isPagingEnabled
     }
     
     func updateIsScrollEnabled(_ isScrollEnabled: Bool?) {
-        self.isScrollEnabled = isScrollEnabled ?? false
+        self.isScrollEnabled = isScrollEnabled ?? self.isScrollEnabled
     }
     
     func updateShowsVerticalScrollIndicator(_ showsVerticalScrollIndicator: Bool?) {
-        self.showsVerticalScrollIndicator = showsVerticalScrollIndicator ?? true
+        self.showsVerticalScrollIndicator = showsVerticalScrollIndicator ?? self.showsVerticalScrollIndicator
     }
     
     func updateShowsHorizontalScrollIndicator(_ showsHorizontalScrollIndicator: Bool?) {
-        self.showsHorizontalScrollIndicator = showsHorizontalScrollIndicator ?? true
+        self.showsHorizontalScrollIndicator = showsHorizontalScrollIndicator ?? self.showsHorizontalScrollIndicator
     }
     
     func updateIndicatorStyle(_ indicatorStyle: UIScrollView.IndicatorStyle?) {
-        self.indicatorStyle = indicatorStyle ?? .default
+        self.indicatorStyle = indicatorStyle ?? self.indicatorStyle
     }
 
     @available(iOS 11.1, *)
@@ -197,7 +197,7 @@ extension CMTTextView {
     }
     
     func updateScrollIndicatorInsets(_ scrollIndicatorInsets: UIEdgeInsets?) {
-        self.scrollIndicatorInsets = scrollIndicatorInsets ?? .zero
+        self.scrollIndicatorInsets = scrollIndicatorInsets ?? self.scrollIndicatorInsets
     }
 
     func updateDecelerationRate(_ decelerationRate: UIScrollView.DecelerationRate?) {
@@ -205,39 +205,39 @@ extension CMTTextView {
     }
     
     func updateIndexDisplayMode(_ indexDisplayMode: UIScrollView.IndexDisplayMode?) {
-        self.indexDisplayMode = indexDisplayMode ?? .automatic
+        self.indexDisplayMode = indexDisplayMode ?? self.indexDisplayMode
     }
         
     func updateDelaysContentTouches(_ delaysContentTouches: Bool?) {
-        self.delaysContentTouches = delaysContentTouches ?? true
+        self.delaysContentTouches = delaysContentTouches ?? self.delaysContentTouches
     }
     
     func updateCanCancelContentTouches(_ canCancelContentTouches: Bool?) {
-        self.canCancelContentTouches = canCancelContentTouches ?? true
+        self.canCancelContentTouches = canCancelContentTouches ?? self.canCancelContentTouches
     }
     
     func updateMinimumZoomScale(_ minimumZoomScale: CGFloat?) {
-        self.minimumZoomScale = minimumZoomScale ?? 1.0
+        self.minimumZoomScale = minimumZoomScale ?? self.minimumZoomScale
     }
     
     func updateMaximumZoomScale(_ maximumZoomScale: CGFloat?) {
-        self.maximumZoomScale = maximumZoomScale ?? 1.0
+        self.maximumZoomScale = maximumZoomScale ?? self.maximumZoomScale
     }
     
     func updateZoomScale(_ zoomScale: CGFloat?) {
-        self.zoomScale = zoomScale ?? 1.0
+        self.zoomScale = zoomScale ?? self.zoomScale
     }
     
     func updateBouncesZoom(_ bouncesZoom: Bool?) {
-        self.bouncesZoom = bouncesZoom ?? true
+        self.bouncesZoom = bouncesZoom ?? self.bouncesZoom
     }
     
     func updateScrollsToTop(_ scrollsToTop: Bool?) {
-        self.scrollsToTop = scrollsToTop ?? true
+        self.scrollsToTop = scrollsToTop ?? self.scrollsToTop
     }
 
     func updateKeyboardDismissMode(_ keyboardDismissMode: UIScrollView.KeyboardDismissMode?) {
-        self.keyboardDismissMode = keyboardDismissMode ?? .none
+        self.keyboardDismissMode = keyboardDismissMode ?? self.keyboardDismissMode
     }
     
     @available(iOS 10.0, *)
@@ -248,19 +248,19 @@ extension CMTTextView {
 
 extension CMTTextView {
     func updateFrame(_ frame: CGRect?) {
-        self.frame = frame ?? CGRect.zero
+        self.frame = frame ?? self.frame
     }
     
     func updateBounds(_ bounds: CGRect?) {
-        self.bounds = bounds ?? CGRect.zero
+        self.bounds = bounds ?? self.bounds
     }
     
     func updateCenter(_ center: CGPoint?) {
-        self.center = center ?? CGPoint.zero
+        self.center = center ?? self.center
     }
     
     func updateTransform(_ transform: CGAffineTransform?) {
-        self.transform = transform ?? CGAffineTransform.identity
+        self.transform = transform ?? self.transform
     }
     
     func updateBackgroundColor(_ color: UIColor?) {
@@ -268,27 +268,29 @@ extension CMTTextView {
     }
     
     func updateClipsToBounds(_ clipsToBounds: Bool?) {
-        self.clipsToBounds = clipsToBounds ?? false
+        self.clipsToBounds = clipsToBounds ?? self.clipsToBounds
     }
     
     func updateAlpha(_ alpha: Float?) {
-        self.alpha = CGFloat(alpha ?? 1)
+        if let a = alpha {
+            self.alpha = CGFloat(a)
+        }
     }
     
     func updateIsOpaque(_ isOpaque: Bool?) {
-        self.isOpaque = isOpaque ?? true
+        self.isOpaque = isOpaque ?? self.isOpaque
     }
     
     func updateClearsContextBeforeDrawing(_ clearsContextBeforeDrawing: Bool?) {
-        self.clearsContextBeforeDrawing = clearsContextBeforeDrawing ?? true
+        self.clearsContextBeforeDrawing = clearsContextBeforeDrawing ?? self.clearsContextBeforeDrawing
     }
     
     func updateIsHidden(_ isHidden: Bool?) {
-        self.isHidden = isHidden ?? false
+        self.isHidden = isHidden ?? self.isHidden
     }
     
     func updateContentMode(_ contentMode: UIView.ContentMode?) {
-        self.contentMode = contentMode ?? .scaleToFill
+        self.contentMode = contentMode ?? self.contentMode
     }
     
     func updateTintColor(_ tintColor: UIColor?) {

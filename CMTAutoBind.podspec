@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CMTAutoBind'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'Simply realize the binding of view and data, and automatically update the view display when the data changes'
 
 # This description is used to generate tags and improve search results.

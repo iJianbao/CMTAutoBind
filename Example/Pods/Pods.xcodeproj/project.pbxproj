@@ -72,7 +72,7 @@
 /* Begin PBXFileReference section */
 		03837145308FDA681FC5B730CABB76FF /* CMTView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTView.swift; path = CMTAutoBind/Classes/CMTView.swift; sourceTree = "<group>"; };
 		0699366D4A6E6BC9A7193A8757DF9A00 /* CMTBindView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTBindView.swift; path = CMTAutoBind/Classes/CMTBindView.swift; sourceTree = "<group>"; };
-		0AF24D4905375CE3E7964DA973A446DA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		0AF24D4905375CE3E7964DA973A446DA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0B5CF9DF07E10CC551469632EA0DC4EB /* Pods-CMTAutoBind_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CMTAutoBind_Tests-Info.plist"; sourceTree = "<group>"; };
 		0EFBE201381FB2F2039F12FDF49DAA4E /* CMTBindControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTBindControl.swift; path = CMTAutoBind/Classes/CMTBindControl.swift; sourceTree = "<group>"; };
 		100CC8049EDE784CD5DE415A35D97C7D /* CMTBindButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTBindButton.swift; path = CMTAutoBind/Classes/CMTBindButton.swift; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 		5B9F1B0DFC3CA51E65FD8035513D559F /* Pods-CMTAutoBind_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CMTAutoBind_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5BBC87D6FC854182DF6D2CD99AA65345 /* CMTAutoBind.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CMTAutoBind.modulemap; sourceTree = "<group>"; };
 		5DDC0CC2BD66E767299EA77AD5DCA099 /* CMTBindSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTBindSlider.swift; path = CMTAutoBind/Classes/CMTBindSlider.swift; sourceTree = "<group>"; };
-		5EC8E19E476E5E32C21B415FA32E588C /* CMTAutoBind.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CMTAutoBind.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5EC8E19E476E5E32C21B415FA32E588C /* CMTAutoBind.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CMTAutoBind.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5F3D1534090B8BF780C630D511B1C18F /* CMTBind.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTBind.swift; path = CMTAutoBind/Classes/CMTBind.swift; sourceTree = "<group>"; };
 		64E08B0EF71045C73B8741ECE04D00A9 /* CMTBindPageControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTBindPageControl.swift; path = CMTAutoBind/Classes/CMTBindPageControl.swift; sourceTree = "<group>"; };
 		67367723DB05C6E463804026B94CD5E6 /* CMTAutoBind */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CMTAutoBind; path = CMTAutoBind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,7 +108,7 @@
 		83F9BF764D80136E2DFE4324DE7A1F1B /* CMTAutoBind-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CMTAutoBind-prefix.pch"; sourceTree = "<group>"; };
 		85D53F09EC7B9F941809F9AF064E4287 /* Pods-CMTAutoBind_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CMTAutoBind_Example-frameworks.sh"; sourceTree = "<group>"; };
 		8859A5D549718427E61D9381AC92B7EF /* CMTAutoBind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CMTAutoBind.debug.xcconfig; sourceTree = "<group>"; };
-		8AB7F7C431210C88C917D660FFDFF95C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		8AB7F7C431210C88C917D660FFDFF95C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		8D413B849D37A75DF1FB620C4060C380 /* Pods-CMTAutoBind_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CMTAutoBind_Example-dummy.m"; sourceTree = "<group>"; };
 		921EA30FFC2DD2F57007B4BC667AC76B /* CMTBindScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTBindScrollView.swift; path = CMTAutoBind/Classes/CMTBindScrollView.swift; sourceTree = "<group>"; };
 		92D453C3E51EF5E6948EE815C3459FD0 /* CMTLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTLabel.swift; path = CMTAutoBind/Classes/CMTLabel.swift; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 		93E092F77E08AAD8A503CC2424AE47BD /* Pods-CMTAutoBind_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CMTAutoBind_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		946300812B9E3C4F1E2EFB0D1C685997 /* CMTAutoBind-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CMTAutoBind-umbrella.h"; sourceTree = "<group>"; };
 		948B5BDD921F965D93752439A3F13962 /* Pods-CMTAutoBind_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CMTAutoBind_Tests-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A425CAF3FAE3514196BEF0260149571C /* Pods-CMTAutoBind_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CMTAutoBind_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A9CA0F8F40045F39766C4E7A1989F3A3 /* CMTScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTScrollView.swift; path = CMTAutoBind/Classes/CMTScrollView.swift; sourceTree = "<group>"; };
 		B731A09A5EF7E69CC743B276D71A31C7 /* Pods-CMTAutoBind_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CMTAutoBind_Example"; path = Pods_CMTAutoBind_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -786,8 +786,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

@@ -31,14 +31,14 @@ open class CMTTextField: UITextField, CMTBindTextFieldBindUpdateProtocol {
 
     func updateTextAlignment(_ textAlignment: NSTextAlignment?) {
         if #available(iOS 9.0, *) {
-            self.textAlignment = textAlignment ?? .natural
+            self.textAlignment = textAlignment ?? self.textAlignment
         }else {
-            self.textAlignment = textAlignment ?? .left
+            self.textAlignment = textAlignment ?? self.textAlignment
         }
     }
 
     func updateBorderStyle(_ borderStyle: UITextField.BorderStyle?) {
-        self.borderStyle = borderStyle ?? .none
+        self.borderStyle = borderStyle ?? self.borderStyle
     }
     
     func updateDefaultTextAttributes(_ defaultTextAttributes: [NSAttributedString.Key : Any]?) {
@@ -63,15 +63,15 @@ open class CMTTextField: UITextField, CMTBindTextFieldBindUpdateProtocol {
     }
     
     func updateClearsOnBeginEditing(_ clearsOnBeginEditing: Bool?) {
-        self.clearsOnBeginEditing = clearsOnBeginEditing ?? false
+        self.clearsOnBeginEditing = clearsOnBeginEditing ?? self.clearsOnBeginEditing
     }
 
     func updateAdjustsFontSizeToFitWidth(_ adjustsFontSizeToFitWidth: Bool?) {
-        self.adjustsFontSizeToFitWidth = adjustsFontSizeToFitWidth ?? false
+        self.adjustsFontSizeToFitWidth = adjustsFontSizeToFitWidth ?? self.adjustsFontSizeToFitWidth
     }
 
     func updateMinimumFontSize(_ minimumFontSize: CGFloat?) {
-        self.minimumFontSize = minimumFontSize ?? 0.0
+        self.minimumFontSize = minimumFontSize ?? self.minimumFontSize
     }
 
     func updateDelegate(_ delegate: UITextFieldDelegate?) {
@@ -87,7 +87,7 @@ open class CMTTextField: UITextField, CMTBindTextFieldBindUpdateProtocol {
     }
     
     func updateAllowsEditingTextAttributes(_ allowsEditingTextAttributes: Bool?) {
-        self.allowsEditingTextAttributes = allowsEditingTextAttributes ?? false
+        self.allowsEditingTextAttributes = allowsEditingTextAttributes ?? self.allowsEditingTextAttributes
     }
     
     func updateTypingAttributes(_ typingAttributes: [NSAttributedString.Key : Any]?) {
@@ -104,7 +104,7 @@ open class CMTTextField: UITextField, CMTBindTextFieldBindUpdateProtocol {
     }
     
     func updateClearButtonMode(_ clearButtonMode: UITextField.ViewMode?) {
-        self.clearButtonMode = clearButtonMode ?? .never
+        self.clearButtonMode = clearButtonMode ?? self.clearButtonMode
     }
     
     func updateLeftView(_ leftView: UIView?) {
@@ -112,7 +112,7 @@ open class CMTTextField: UITextField, CMTBindTextFieldBindUpdateProtocol {
     }
     
     func updateLeftViewMode(_ leftViewMode: UITextField.ViewMode?) {
-        self.leftViewMode = leftViewMode ?? .never
+        self.leftViewMode = leftViewMode ?? self.leftViewMode
     }
     
     func updateRightView(_ rightView: UIView?) {
@@ -120,7 +120,7 @@ open class CMTTextField: UITextField, CMTBindTextFieldBindUpdateProtocol {
     }
     
     func updateRightViewMode(_ rightViewMode: UITextField.ViewMode?) {
-        self.rightViewMode = rightViewMode ?? .never
+        self.rightViewMode = rightViewMode ?? self.rightViewMode
     }
     
     func updateInputView(_ inputView: UIView?) {
@@ -132,47 +132,47 @@ open class CMTTextField: UITextField, CMTBindTextFieldBindUpdateProtocol {
     }
 
     func updateClearsOnInsertion(_ clearsOnInsertion: Bool?) {
-        self.clearsOnInsertion = clearsOnInsertion ?? false
+        self.clearsOnInsertion = clearsOnInsertion ?? self.clearsOnInsertion
     }
 }
 
 extension CMTTextField {
     func updateIsEnabled(_ isEnabled: Bool?) {
-        self.isEnabled = isEnabled ?? true
+        self.isEnabled = isEnabled ?? self.isEnabled
     }
     
     func updateIsSelected(_ isSelected: Bool?) {
-        self.isSelected = isSelected ?? false
+        self.isSelected = isSelected ?? self.isSelected
     }
     
     func updateIsHighlighted(_ isHighlighted: Bool?) {
-        self.isHighlighted = isHighlighted ?? false
+        self.isHighlighted = isHighlighted ?? self.isHighlighted
     }
     
     func updateContentVerticalAlignment(_ contentVerticalAlignment: UIControl.ContentVerticalAlignment?) {
-        self.contentVerticalAlignment = contentVerticalAlignment ?? .center
+        self.contentVerticalAlignment = contentVerticalAlignment ?? self.contentVerticalAlignment
     }
     
     func updateContentHorizontalAlignment(_ contentHorizontalAlignment: UIControl.ContentHorizontalAlignment?) {
-        self.contentHorizontalAlignment = contentHorizontalAlignment ?? .center
+        self.contentHorizontalAlignment = contentHorizontalAlignment ?? self.contentHorizontalAlignment
     }
 }
 
 extension CMTTextField {
     func updateFrame(_ frame: CGRect?) {
-        self.frame = frame ?? CGRect.zero
+        self.frame = frame ?? self.frame
     }
     
     func updateBounds(_ bounds: CGRect?) {
-        self.bounds = bounds ?? CGRect.zero
+        self.bounds = bounds ?? self.bounds
     }
     
     func updateCenter(_ center: CGPoint?) {
-        self.center = center ?? CGPoint.zero
+        self.center = center ?? self.center
     }
     
     func updateTransform(_ transform: CGAffineTransform?) {
-        self.transform = transform ?? CGAffineTransform.identity
+        self.transform = transform ?? self.transform
     }
     
     func updateBackgroundColor(_ color: UIColor?) {
@@ -180,27 +180,29 @@ extension CMTTextField {
     }
     
     func updateClipsToBounds(_ clipsToBounds: Bool?) {
-        self.clipsToBounds = clipsToBounds ?? false
+        self.clipsToBounds = clipsToBounds ?? self.clipsToBounds
     }
     
     func updateAlpha(_ alpha: Float?) {
-        self.alpha = CGFloat(alpha ?? 1)
+        if let a = alpha {
+            self.alpha = CGFloat(a)
+        }
     }
     
     func updateIsOpaque(_ isOpaque: Bool?) {
-        self.isOpaque = isOpaque ?? true
+        self.isOpaque = isOpaque ?? self.isOpaque
     }
     
     func updateClearsContextBeforeDrawing(_ clearsContextBeforeDrawing: Bool?) {
-        self.clearsContextBeforeDrawing = clearsContextBeforeDrawing ?? true
+        self.clearsContextBeforeDrawing = clearsContextBeforeDrawing ?? self.clearsContextBeforeDrawing
     }
     
     func updateIsHidden(_ isHidden: Bool?) {
-        self.isHidden = isHidden ?? false
+        self.isHidden = isHidden ?? self.isHidden
     }
     
     func updateContentMode(_ contentMode: UIView.ContentMode?) {
-        self.contentMode = contentMode ?? .scaleToFill
+        self.contentMode = contentMode ?? self.contentMode
     }
     
     func updateTintColor(_ tintColor: UIColor?) {

@@ -14,15 +14,15 @@ open class CMTPageControl: UIPageControl, CMTBindPageControlBindUpdateProtocol {
     }()
     
     func updateNumberOfPages(_ numberOfPages: Int?) {
-        self.numberOfPages = numberOfPages ?? 0
+        self.numberOfPages = numberOfPages ?? self.numberOfPages
     }
     
     func updateCurrentPage(_ currentPage: Int?) {
-        self.currentPage = currentPage ?? 0
+        self.currentPage = currentPage ?? self.currentPage
     }
     
     func updateHidesForSinglePage(_ hidesForSinglePage: Bool?) {
-        self.hidesForSinglePage = hidesForSinglePage ?? false
+        self.hidesForSinglePage = hidesForSinglePage ?? self.hidesForSinglePage
     }
     
     func updatePageIndicatorTintColor(_ pageIndicatorTintColor: UIColor?) {
@@ -35,7 +35,7 @@ open class CMTPageControl: UIPageControl, CMTBindPageControlBindUpdateProtocol {
     
     @available(iOS 14.0, *)
     func updateBackgroundStyle(_ backgroundStyle: UIPageControl.BackgroundStyle?) {
-        self.backgroundStyle = backgroundStyle ?? .automatic
+        self.backgroundStyle = backgroundStyle ?? self.backgroundStyle
     }
 
     @available(iOS 14.0, *)
@@ -51,41 +51,41 @@ open class CMTPageControl: UIPageControl, CMTBindPageControlBindUpdateProtocol {
 
 extension CMTPageControl {
     func updateIsEnabled(_ isEnabled: Bool?) {
-        self.isEnabled = isEnabled ?? true
+        self.isEnabled = isEnabled ?? self.isEnabled
     }
     
     func updateIsSelected(_ isSelected: Bool?) {
-        self.isSelected = isSelected ?? false
+        self.isSelected = isSelected ?? self.isSelected
     }
     
     func updateIsHighlighted(_ isHighlighted: Bool?) {
-        self.isHighlighted = isHighlighted ?? false
+        self.isHighlighted = isHighlighted ?? self.isHighlighted
     }
     
     func updateContentVerticalAlignment(_ contentVerticalAlignment: UIControl.ContentVerticalAlignment?) {
-        self.contentVerticalAlignment = contentVerticalAlignment ?? .center
+        self.contentVerticalAlignment = contentVerticalAlignment ?? self.contentVerticalAlignment
     }
     
     func updateContentHorizontalAlignment(_ contentHorizontalAlignment: UIControl.ContentHorizontalAlignment?) {
-        self.contentHorizontalAlignment = contentHorizontalAlignment ?? .center
+        self.contentHorizontalAlignment = contentHorizontalAlignment ?? self.contentHorizontalAlignment
     }
 }
 
 extension CMTPageControl {
     func updateFrame(_ frame: CGRect?) {
-        self.frame = frame ?? CGRect.zero
+        self.frame = frame ?? self.frame
     }
     
     func updateBounds(_ bounds: CGRect?) {
-        self.bounds = bounds ?? CGRect.zero
+        self.bounds = bounds ?? self.bounds
     }
     
     func updateCenter(_ center: CGPoint?) {
-        self.center = center ?? CGPoint.zero
+        self.center = center ?? self.center
     }
     
     func updateTransform(_ transform: CGAffineTransform?) {
-        self.transform = transform ?? CGAffineTransform.identity
+        self.transform = transform ?? self.transform
     }
     
     func updateBackgroundColor(_ color: UIColor?) {
@@ -93,27 +93,29 @@ extension CMTPageControl {
     }
     
     func updateClipsToBounds(_ clipsToBounds: Bool?) {
-        self.clipsToBounds = clipsToBounds ?? false
+        self.clipsToBounds = clipsToBounds ?? self.clipsToBounds
     }
     
     func updateAlpha(_ alpha: Float?) {
-        self.alpha = CGFloat(alpha ?? 1)
+        if let a = alpha {
+            self.alpha = CGFloat(a)
+        }
     }
     
     func updateIsOpaque(_ isOpaque: Bool?) {
-        self.isOpaque = isOpaque ?? true
+        self.isOpaque = isOpaque ?? self.isOpaque
     }
     
     func updateClearsContextBeforeDrawing(_ clearsContextBeforeDrawing: Bool?) {
-        self.clearsContextBeforeDrawing = clearsContextBeforeDrawing ?? true
+        self.clearsContextBeforeDrawing = clearsContextBeforeDrawing ?? self.clearsContextBeforeDrawing
     }
     
     func updateIsHidden(_ isHidden: Bool?) {
-        self.isHidden = isHidden ?? false
+        self.isHidden = isHidden ?? self.isHidden
     }
     
     func updateContentMode(_ contentMode: UIView.ContentMode?) {
-        self.contentMode = contentMode ?? .scaleToFill
+        self.contentMode = contentMode ?? self.contentMode
     }
     
     func updateTintColor(_ tintColor: UIColor?) {
